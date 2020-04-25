@@ -144,3 +144,24 @@
 
  });
  //mui ten xoay
+
+ //hiệu ứng fancybox
+ $(document).ready(function() {
+     $(".resort-info a").fancybox();
+ });
+
+ //truotxuongnoicanxuong
+ $(document).ready(function() {
+     $(".down-1").click(function(e) {
+         e.preventDefault();
+         $("html,body").animate({ scrollTop: 580 });
+     });
+     $(".down-2").click(function(e) {
+         e.preventDefault();
+         $("html,body").animate({ scrollTop: 180 });
+     });
+     $(".down-3").click(function(e) {
+         e.preventDefault();
+         $("html,body").animate({ scrollTop: 1000 });
+     });
+ });
